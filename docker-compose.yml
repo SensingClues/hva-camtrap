@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  tensorflow-serving:
+    image: 'tensorflow/serving'
+    ports:
+      - '8500:8500'
+      - '8501:8501'
+    volumes:
+      - /data/docker/camera_trap_object_detection:/models/camera_trap_object_detection
+    environment:
+        - MODEL_NAME=camera_trap_object_detection
