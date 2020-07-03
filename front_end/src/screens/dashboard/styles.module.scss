@@ -1,0 +1,153 @@
+@import '../../styles/colors.module.scss';
+@import '../../styles/typography.module.scss';
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  > div {
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+
+    width: 35%;
+
+    @media (max-width: 1300px) {
+      width: 60%;
+    }
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+
+    padding: 24px;
+
+    background: $BACKGROUND_COLOR_BLUE;
+  }
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+
+  overflow: hidden;
+  margin-bottom: 8px;
+
+  > div {
+    flex: 2;
+    display: flex;
+
+    margin: 8px;
+
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 4px;
+    background: $BACKGROUND_DARK;
+
+    > span {
+      width: 100%;
+      position: absolute;
+      align-self: flex-end;
+
+      color: $WHITE;
+      background: $BACKGROUND_DARK;
+
+      padding: 2px;
+    }
+
+    > img {
+      object-fit: contain;
+
+      &:first-child {
+        width: 100%;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.formContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+
+  margin: 8px;
+  position: relative;
+
+  > div {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+
+    overflow: auto;
+  }
+}
+
+.panelDetails {
+  @extend .regular14;
+
+  display: flex;
+  flex-direction: column;
+
+  > p {
+    @extend .regular20;
+    margin: 0;
+  }
+}
+
+.controlButtons {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 8px;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > span {
+    width: 20px;
+    border: solid 1px gray;
+    transition: all 0.3s;
+
+    &[data-active='true'] {
+      border-color: deepskyblue;
+    }
+  }
+
+  > div {
+    @extend .regular12;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+
+    margin: 4px;
+
+    cursor: pointer;
+
+    background: #959595;
+    transition: all 0.3s;
+
+    &[data-active='true'] {
+      background: deepskyblue;
+    }
+  }
+}

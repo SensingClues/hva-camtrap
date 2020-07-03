@@ -2,7 +2,7 @@
 *.DS_Store
 *.pb
 *.hdf5
-*megadetector_results/
+*megadetector_result/
 
 # Data and notebooks
 data/

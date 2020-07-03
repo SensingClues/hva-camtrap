@@ -1,0 +1,141 @@
+@import './colors.module.scss';
+
+// The different fonts, with their generic default value.
+$FONT_BOLD: 'Roboto-Bold', sans-serif;
+$FONT_LIGHT: 'Roboto-Light', sans-serif;
+$FONT_REGULAR: 'Roboto-Regular', sans-serif;
+
+.typographyDefaults {
+  color: $TEXT_DARK;
+}
+
+/**
+ * These are all the different typography's used in the portal.
+ * They all have the default text color {TEXT_DARK}.
+ * The typography's are structured as follows:
+ * - The first part indicates the font of the typography.
+ * - The second part indicates the font-size of the typography.
+ */
+
+.light10 {
+  @extend .typographyDefaults;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  font-family: $FONT_LIGHT;
+}
+
+.light12 {
+  @extend .typographyDefaults;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  font-family: $FONT_LIGHT;
+}
+
+.light14 {
+  @extend .typographyDefaults;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: $FONT_LIGHT;
+}
+
+.light20 {
+  @extend .typographyDefaults;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  font-family: $FONT_LIGHT;
+}
+
+.light24 {
+  @extend .typographyDefaults;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  font-family: $FONT_LIGHT;
+}
+
+.regular10 {
+  @extend .typographyDefaults;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  font-family: $FONT_REGULAR;
+}
+
+.regular12 {
+  @extend .typographyDefaults;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  font-family: $FONT_REGULAR;
+}
+
+.regular14 {
+  @extend .typographyDefaults;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: $FONT_REGULAR;
+}
+
+.regular20 {
+  @extend .typographyDefaults;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  font-family: $FONT_REGULAR;
+}
+
+.regular24 {
+  @extend .typographyDefaults;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  font-family: $FONT_REGULAR;
+}
+
+.bold10 {
+  @extend .typographyDefaults;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  font-family: $FONT_BOLD;
+}
+
+.bold12 {
+  @extend .typographyDefaults;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  font-family: $FONT_BOLD;
+}
+
+.bold14 {
+  @extend .typographyDefaults;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  font-family: $FONT_BOLD;
+}
+
+.bold20 {
+  @extend .typographyDefaults;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  font-family: $FONT_BOLD;
+}
+
+.bold24 {
+  @extend .typographyDefaults;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+  font-family: $FONT_BOLD;
+}

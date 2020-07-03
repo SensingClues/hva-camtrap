@@ -1,0 +1,27 @@
+/* NAVBAR */
+@import '../../styles/typography.module.scss';
+
+li {
+  @extend .regular20;
+
+  display: inline !important;
+  padding: 10px;
+  margin: 0 20px;
+  color: white;
+  float: right;
+
+  > img {
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.left_nav {
+  float: left;
+}

@@ -1,0 +1,11 @@
+@import '../../styles/colors.module.scss';
+
+.card {
+  display: flex;
+
+  border-radius: 4px;
+  background: $WHITE;
+  overflow: hidden;
+
+  box-shadow: 1px 1px 2px 1px rgba(62, 62, 62, 0.3);
+}

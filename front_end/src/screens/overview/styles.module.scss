@@ -1,0 +1,94 @@
+@import '../../styles/typography.module.scss';
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  > nav {
+    background-color: black;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+  overflow: auto;
+  padding: 0 20%;
+}
+
+/* FLEX ITEM */
+.flex_item {
+  display: flex;
+  position: relative; /*past zich aan, aan tekst block*/
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.2s;
+
+  > img {
+    height: 100%;
+  }
+
+  border: 5px solid green;
+
+  &[data-is-validated='false'] {
+    cursor: pointer;
+    &:hover {
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+
+  &[data-is-validated='true'] {
+    border: 5px solid black;
+    filter: grayscale(100%);
+  }
+}
+
+.searchbar {
+  @extend .regular20;
+}
+
+.text_block {
+  position: absolute; /*above everything*/
+  color: white;
+  background-color: black;
+  width: 100%;
+  bottom: 0;
+
+  > span {
+    @extend .regular24;
+    color: white;
+  }
+}
+
+.hide_element {
+  display: none;
+}
+
+/* CHECKBOX NAVBAR */
+.checkbox {
+  @extend .regular20;
+  color: $WHITE;
+
+  > span:first-child {
+    color: chartreuse;
+  }
+}
+
+.spinner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
