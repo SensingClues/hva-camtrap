@@ -1,5 +1,8 @@
 *.idea
 *.DS_Store
+*.pb
+*.hdf5
+*megadetector_results/
 
 # Data and notebooks
 data/
